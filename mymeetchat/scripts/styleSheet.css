@@ -1,0 +1,213 @@
+/* * {
+	padding: 0;
+	margin: 0;
+}
+
+#load {
+	width: 100%;
+	height: 100vh;
+	background: #fff url('http://garudapr.in/wp-content/uploads/2017/12/loader.gif') no-repeat center center;
+	z-index: 99999;
+} */
+
+body {
+	background-image: url("../images/bg2.jpg");
+	background-repeat: repeat;
+}
+
+.heading {
+	font-family: "Segoe UI";
+	font-size: 36px;
+	color: rgb(253, 207, 24);
+	text-shadow: 0px 0px 2px #000000;
+}
+
+.table {
+	border: 1px solid rgb(253, 207, 24);
+	border-radius: 7px;
+	background-color: transparent;
+	box-shadow: 0px 0px 8px #6699FF;
+	padding: 5px 5px;
+}
+
+.tableHead {
+	font-family: "Segoe UI";
+	color: rgb(253, 207, 24);
+	font-size: 20px;
+	text-shadow: 0px 0px 2px #000000;
+}
+
+.labels {
+	font-family: "Segoe UI";
+	color: rgb(251, 195, 28);
+	font-size: 15px;
+	text-shadow: 0px 0px 2px #000000;
+	font-style: italic;
+}
+
+.fields {
+	font-family: "Segoe UI";
+	color: #FFF;
+	font-size: 14px;
+	border: 1px solid #66F;
+	border-radius: 7px;
+	background-color: transparent;
+	padding: 2px 4px;
+}
+
+
+.commandButton {
+
+	background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+	border: 0px solid #150485;
+	border-radius: 35px;
+	font-size: .5 rem;
+	font-weight: bold;
+	color: #FFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	outline: none;
+	transition: all 0.25s ease;
+	width: 100px;
+	position: relative;
+	height: 30px;
+	overflow: hidden;
+
+
+
+}
+
+.commandButton:not(.loading):hover {
+	box-shadow: 0px 2px 16px 0px #2575fc;
+}
+
+.commandButton:not(.loading):hover i {
+	transform: translate(7px);
+}
+
+.commandButton i {
+	font-size: 1.45rem;
+	position: absolute;
+	z-index: 10;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	transition: all 0.25s ease;
+	background: inherit;
+}
+
+.commandButton .text {
+	display: block;
+	position: absolute;
+	width: 100px;
+	left: 45px;
+	pointer-events: none;
+	transition: all .25s ease;
+
+
+}
+
+.loading-anim {
+	position: absolute;
+	z-index: 100;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	pointer-events: none;
+	opacity: 0;
+	transition: all 0.25s ease;
+
+}
+
+.loading-anim:after {
+	content: '';
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	border-left: 3px solid #fff;
+	animation: loading infinite 0.8s ease 0.05s;
+	position: absolute;
+
+
+}
+
+.loading-anim::before {
+	content: '';
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	border-left: 3px solid #fff;
+	animation: loading infinite 0.8s linear;
+	position: absolute;
+	opacity: 0.6;
+
+}
+
+
+a:link {
+	font-family: "Segoe UI";
+	color: #FFF;
+	text-decoration: none;
+	font-size: 16px;
+	text-shadow: 2px 2px 3px #333333;
+}
+
+a:active {
+	font-family: "Segoe UI";
+	color: #FFF;
+	text-decoration: none;
+	font-size: 16px;
+	text-shadow: 2px 2px 3px #333333;
+}
+
+a:visited {
+	font-family: "Segoe UI";
+	color: #FFF;
+	text-decoration: none;
+	font-size: 16px;
+	text-shadow: 2px 2px 3px #333333;
+}
+
+a:hover {
+	font-family: "Segoe UI";
+	color: #3FF;
+	text-decoration: none;
+	font-size: 16px;
+	text-shadow: 2px 2px 3px #333333;
+}
+
+.text {
+	font-family: "Segoe UI";
+	color: #6CF;
+	font-size: 16px;
+	text-shadow: 0px 0px 2px #000000;
+}
+
+.info {
+	font-family: "Segoe UI";
+	color: #F30;
+	font-size: 14px;
+	text-shadow: 0px 0px 2px #000000;
+}
+
+.nick {
+	font-family: "Times New Roman";
+	font-size: 14px;
+	font-style: italic;
+	color: #F90;
+}
+
+.msg {
+	font-family: "Segoe UI";
+	font-size: 14px;
+	color: #FFF;
+}
+
+td {
+	vertical-align: top;
+}
